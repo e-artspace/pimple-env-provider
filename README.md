@@ -31,11 +31,11 @@ $container->register(new \EnvProvider\EnvProvider([
 	]
 ]);
 
-assert($container['env.overload'] === true);
+assert($container['debug.app'] === true);
 
 $container['env.overload']; // this do the magic
 
-assert($container['env.overload'] === false);
+assert($container['debug.app'] === false);
 ```
 
 ## Predefined services:
