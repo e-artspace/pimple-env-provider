@@ -1,5 +1,5 @@
 {
-    "name": "linkeddatacenter/pimple-env-provider",
+    "name": "e-artspace/pimple-env-provider",
     "description": "A super simple, Silex compatible, lightweight service provider to override Pimple container parameters with the value of environment variables.",
     "keywords": ["silex", "pimple", "environment", "service provider", "12factor", "twelve-factor app"],
     "license": "MIT",
@@ -10,7 +10,7 @@
     	"phpunit/phpunit": "~5.3"
     },
     "autoload": {
-        "psr-4": { "Linkeddatacenter\\Pimple\\Provider\\": "src/" }
+        "psr-4": { "EnvProvider\\": "src/" }
     },
     "authors": [
         {

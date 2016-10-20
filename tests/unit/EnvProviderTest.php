@@ -4,7 +4,7 @@ namespace Test\Unit;
 
 use PHPUnit_Framework_TestCase;
 use Pimple\Container;
-use Linkeddatacenter\Pimple\Provider\EnvProvider;
+use EnvProvider\EnvProvider;
 
 
 class EnvProviderTest extends PHPUnit_Framework_TestCase

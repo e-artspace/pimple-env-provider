@@ -1,5 +1,5 @@
 <?php
-namespace Linkeddatacenter\Pimple\Provider;
+namespace EnvProvider;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
