@@ -5,7 +5,7 @@ $script = <<-SCRIPT
 	apt-get update
 	
 	# Install php and composer
-	apt-get -y install git curl php7.0-cli php7.0-common php7.0-xml
+	apt-get -y install git curl php7.0-cli php7.0-common php7.0-xml php7.0-zip 
 	curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 	echo "======================================================"
