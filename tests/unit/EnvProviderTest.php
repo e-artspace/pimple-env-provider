@@ -2,12 +2,12 @@
 
 namespace Test\Unit;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Pimple\Container;
 use EnvProvider\EnvProvider;
 
 
-class EnvProviderTest extends PHPUnit_Framework_TestCase
+class EnvProviderTest extends TestCase
 {
 
     public function testParametersWithEnvironment ()
@@ -93,7 +93,7 @@ class EnvProviderTest extends PHPUnit_Framework_TestCase
 	}
 	
     /**
-     * @expectedException PHPUnit_Framework_Error
+     * @expectedException PHPUnit\Framework\Error\Error
      */
     public function testParametersWithUnexistentCast ()
 	{

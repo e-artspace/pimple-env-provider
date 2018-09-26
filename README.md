@@ -1,6 +1,6 @@
 pimple-env-provider
 ===========
-[![Build Status](https://travis-ci.org/e-artspace/pimple-env-provider.svg?branch=master)](https://travis-ci.org/e-artspace/resourceful)
+[![Build Status](https://travis-ci.org/e-artspace/pimple-env-provider.svg?branch=master)](https://travis-ci.org/e-artspace/pimple-env-provider)
 [![Code Coverage](https://scrutinizer-ci.com/g/e-artspace/pimple-env-provider/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/e-artspace/pimple-env-provider/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/e-artspace/pimple-env-provider/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/e-artspace/pimple-env-provider/?branch=master)
 
@@ -64,34 +64,23 @@ $container['env.name.builder'] = app->protect(function($name) {
 ```
 
 
+## Developing and Testing  with docker
+
+	$ docker run --rm -ti -v $PWD/.:/app composer install
+	$ docker run --rm -ti -v $PWD/.:/app composer vendor/bin/phpunit
+
 ## Developing and Testing  with vagrant
 
-A vagrant virtual appliance is available for developing and testing in a local workstation.
+A vagrant file is available for developing and testing in a local workstation with virtualbox.
 
-Local workstation requirements:
+	$ vagrant up
+	$ vagrant ssh
+	$ cd /vagrant
+	$ composer install
+	$ vendor/bin/phpunit
+	$ exit
+	$  vagrant destroy
 
-- install [GIT](http://git-scm.com/). Select “checkout as is , commit Unix-style line endings”.
-- install [Vagrant](https://www.vagrantup.com/)
-- install [Virtualbox](https://www.virtualbox.org/)
+## License
 
-Open a bash shell and checkout pimple-env-provider project:
-
-```shell
-git clone https://github.com/e-artspace/pimple-env-provider.git
-cd pimple-env-provider
-```
-
-The following commands can be used to start a virtual appliance, execute all tests and destroy virtual host:
-
-```shell
-vagrant up
-vagrant ssh
-cd /vagrant
-composer install
-vendor/bin/phpunit
-exit
-vagrant destroy
-```
-
-**Note that your git repo directory is mounted in /vagrant dir on the virtual host.**
-
+(c) Enrico Fagnoni  MIT License (see file)

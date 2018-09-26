@@ -28,7 +28,7 @@ class EnvProvider implements ServiceProviderInterface
 		});
 		
 		$app['env.cast.json_decode'] = $app->protect(function($str) {
-			return json_decode($str);
+			return json_decode($str,true);
 		});
 		
 		// default name builder
