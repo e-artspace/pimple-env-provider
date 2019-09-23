@@ -69,17 +69,6 @@ $container['env.name.builder'] = app->protect(function($name) {
 	$ docker run --rm -ti -v $PWD/.:/app composer install
 	$ docker run --rm -ti -v $PWD/.:/app composer vendor/bin/phpunit
 
-## Developing and Testing  with vagrant
-
-A vagrant file is available for developing and testing in a local workstation with virtualbox.
-
-	$ vagrant up
-	$ vagrant ssh
-	$ cd /vagrant
-	$ composer install
-	$ vendor/bin/phpunit
-	$ exit
-	$  vagrant destroy
 
 ## License
 
